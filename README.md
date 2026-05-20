@@ -207,7 +207,7 @@ grid-template-columns:1fr;
     
 }    
     
-</style>    </head>    <body>    <header>    
+</style>    </head>    <body>    <header>    <button onclick="adminLogin()">Admin</button>
 </header>    <div class="container">    <!-- DASHBOARD -->    <div class="dashboard-grid">
 
   <div class="small">👥 ጠቅላላ: <span id="total"></span></div>
@@ -912,5 +912,27 @@ div.querySelector(".view").onclick = ()=>view(s.id);
 list.appendChild(div);    
     
 });    
-}    
-</script>    </body>    
+}    function adminLogin(){
+
+let pass = prompt("Admin Password");
+
+if(pass=="1234"){
+
+document.querySelectorAll(".edit")
+.forEach(btn=>btn.style.display="block");
+
+document.querySelectorAll(".del")
+.forEach(btn=>btn.style.display="block");
+
+alert("Admin Mode Activated");
+
+}else{
+
+alert("Wrong Password");
+
+}
+
+}
+
+</script>    </body>    </html>
+
