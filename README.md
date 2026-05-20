@@ -914,4 +914,3 @@ list.appendChild(div);
 });    
 }    
 </script>    </body>    
-</html>    
